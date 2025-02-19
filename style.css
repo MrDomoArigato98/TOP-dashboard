@@ -79,7 +79,8 @@ body{
     grid-template-columns: 1fr 4fr;
 }
 .dashboard{
-    grid-column: 1 / 2;
+    display: grid;
+    grid-column: 1fr 2fr 1fr;
     color: white;
     font-weight: bolder;
     font-size: x-large;
@@ -87,9 +88,10 @@ body{
 }
 .dashboard ul{
     list-style: none;
-    border: 1px solid black;
 }
-
+.dashboard img{
+    width: 40px;
+}
 .content{
     display: grid;
     grid-template-rows: 1fr 4fr;
@@ -158,21 +160,28 @@ body{
     align-self: center;
 }
 
-.trending{
-    display: grid;
-    border-radius: 10px;
-    grid-template-rows: 1fr 6fr;
-    margin-bottom: 15px;
-}
-
 .announcements{
     display: grid;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .announcements .title{
     align-self: center;
+    font-weight: bolder;
+    font-size: large;
+}
+.announcements .notice{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+}
+
+/*Trending box with people  */
+.trending{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    margin-bottom: 15px;
 }
 .people{
     display: grid;
@@ -182,6 +191,7 @@ body{
 }
 .people div{
     display: grid;
+    padding:10px;
     grid-template-columns: 1fr 2fr;
 }
 .people p{
@@ -189,4 +199,4 @@ body{
 }
 .title{
     font-weight: bold;
-}
+}/*Trending box with people END */
