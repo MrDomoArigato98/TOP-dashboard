@@ -77,7 +77,7 @@ h6 {
     --quests-bg: white;
     --card-bg:#7209B7;
     --card-text: white;
-
+    --card-svg: invert(19%) sepia(100%) saturate(2482%) hue-rotate(344deg) brightness(97%) contrast(101%);
     --announcement-card-bg:#4361EE;
     --announcement-card-text:white;
 
@@ -221,7 +221,12 @@ input:focus {
 
 .card svg{
     height: 40px;
+    filter: var(--card-svg);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1)) 
+    drop-shadow(0 0 20px rgba(0, 255, 255, 1)); 
 }
+
+
 .card {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
