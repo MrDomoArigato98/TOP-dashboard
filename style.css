@@ -365,6 +365,7 @@ button:active {
     background-color: var(--article-card-bg);
 
     grid-template-columns: 1fr 1fr;
+    
 
 }
 
@@ -373,11 +374,15 @@ button:active {
 }
 
 .post img {
-    max-height: 75%;
+    height: 75%;
     justify-self: center;
-    height: auto;
+    align-self: center;
 }
 
 .trending {
     align-content: end;
+}
+
+.user{
+    align-self: center;
 }
