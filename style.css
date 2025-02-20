@@ -236,6 +236,8 @@ input:focus {
 #greeting img {
     grid-column: 1;
     justify-self: center;
+    border: 1px solid black;
+    border-radius: 1px;
 }
 
 .quests {
@@ -268,6 +270,7 @@ input:focus {
 }
 .socials {
     display: grid;
+    margin-top: 15px;
     gap: 20px;
 }
 
@@ -287,32 +290,14 @@ input:focus {
     align-self: center;
 }
 
-.announcements {
-    display: grid;
-    
-}
-
-.announcements .title {
-    align-self: center;
-    font-weight: bolder;
-    font-size: large;
-}
-
-.announcements .notice {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 10px;
-    background-color:var(--announcement-card-bg);
-    color: var(--announcement-card-text);
-}
-
 /*Trending box with people  */
 .trending {
     display: grid;
     grid-template-rows: 1fr 6fr;
     margin-bottom: 15px;
+}
+.trending .title{
+    align-self: center;
 }
 
 .people {
