@@ -1,4 +1,3 @@
-
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -69,46 +68,50 @@ h6 {
     isolation: isolate;
 }
 
-:root{
+:root {
     --left-nav-bg: #000004;
     --left-nav-text: rgb(255, 255, 255);
     --left-nav-svg: invert(100%) sepia(7%) saturate(7464%) hue-rotate(160deg) brightness(124%) contrast(104%);
 
-    --card-bg:#7209B7;
+    --card-bg: #7209B7;
     --card-text: white;
     --card-svg: invert(19%) sepia(100%) saturate(2482%) hue-rotate(344deg) brightness(97%) contrast(101%);
-    
-    --announcement-card-bg:#4A8FE7;
-    --announcement-card-text:white;
 
-    --button-bg:#4A8FE7;
+    --announcement-card-bg: #4A8FE7;
+    --announcement-card-text: white;
 
-    --header-bg:#eaefee;
-    
-    --s-rank-card:#D17B0F;
-    --a-rank-card:#50514F;
-    --b-rank-card:#BAC1B8;
-    --b-rank-card-text:black;
-    
+    --button-bg: #4A8FE7;
+
+    --header-bg: #eaefee;
+
+    --s-rank-card: #D17B0F;
+    --a-rank-card: #50514F;
+    --b-rank-card: #BAC1B8;
+    --b-rank-card-text: black;
+
     --special: #F72585;
-    
-    --article-card-bg:#4A8FE7;
+
+    --article-card-bg: #4A8FE7;
 }
 
-.card.s-rank{
+.card.s-rank {
     background-color: var(--s-rank-card);
 }
-.card.s-rank.special{
+
+.card.s-rank.special {
     background-color: var(--special);
 }
-.card.a-rank{
+
+.card.a-rank {
     background-color: var(--a-rank-card);
 
 }
-.card.b-rank{
-    background-color:var(--b-rank-card);
+
+.card.b-rank {
+    background-color: var(--b-rank-card);
     color: var(--b-rank-card-text);
 }
+
 body {
     font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
@@ -154,13 +157,14 @@ body {
     font-size: large;
 }
 
-.leftnav a{
+.leftnav a {
     justify-self: start;
     text-decoration: none;
     color: var(--left-nav-text);
     font-size: larger;
 }
-.leftnav h2{
+
+.leftnav h2 {
     justify-self: start;
     text-decoration: none;
     color: var(--left-nav-text);
@@ -170,17 +174,19 @@ body {
 .content {
     display: grid;
     grid-template-rows: 1fr 4fr;
-    
+
 }
 
-.searchbox svg{
+.searchbox svg {
     height: 30px;
     padding-right: 10px;
 }
-.searchbox a{
+
+.searchbox a {
     justify-self: right;
     align-self: center;
 }
+
 .header {
     display: grid;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -207,6 +213,7 @@ body {
     background-color: rgb(245, 250, 254);
 }
 
+
 input:focus {
     border-color: #007bff;
 }
@@ -220,24 +227,40 @@ input:focus {
     grid-template-rows: 1fr 1fr;
     align-items: center;
 }
-#options img{
+
+#options img {
     width: 50%;
     border: 1px solid black;
     border-radius: 2px;
 }
-#options input {
+
+
+#options button {
     border: none;
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    background-color:var(--button-bg);
+    background-color: var(--button-bg);
     color: white;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#options svg{
+
+button:active {
+    transform: translateY(2px);
+    /* Moves button down */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Smaller shadow */
+}
+
+#options button:hover {
+    background-color: #076AEC;
+}
+
+#options svg {
     width: 40px;
 }
+
 #greeting {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -250,15 +273,17 @@ input:focus {
     border: 1px solid black;
     border-radius: 1px;
 }
-#greeting div{
+
+#greeting div {
     align-self: center;
 }
+
 .quests {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
-.card svg{
+.card svg {
     height: 40px;
 }
 
@@ -267,16 +292,17 @@ input:focus {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding: 20px;
     color: var(--card-text);
-    background-color:var(--card-bg);
+    background-color: var(--card-bg);
 
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     grid-template-rows: 40px 2fr 1fr;
 }
-.options{
+
+.options {
     display: flex;
     align-items: center;
-    justify-content:space-around
+    justify-content: space-around
 }
 
 .projects {
@@ -296,20 +322,20 @@ input:focus {
     align-self: center;
 }
 
-.socials{
+.socials {
     display: grid;
     gap: 30px;
 }
 
 
 /* Announcement card */
-.announcement{
+.announcement {
     display: grid;
     grid-template-rows: 1fr 6fr;
     margin-top: 30px;
 }
 
-.articles{
+.articles {
     display: grid;
     border-radius: 5px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -318,15 +344,17 @@ input:focus {
     color: white;
     background-color: var(--article-card-bg);
 }
-.articles div{
+
+.articles div {
     border-bottom: 1px solid whitesmoke;
 }
-.announcement .title{
+
+.announcement .title {
     display: grid;
     align-self: center;
 }
 
-.tweets{
+.tweets {
     display: grid;
     border-radius: 5px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -338,14 +366,17 @@ input:focus {
     grid-template-columns: 1fr 1fr;
 
 }
-.post{
+
+.post {
     display: grid;
 }
-.post img{
-    max-height: 75%; 
+
+.post img {
+    max-height: 75%;
     justify-self: center;
     height: auto;
 }
-.trending{
+
+.trending {
     align-content: end;
 }
