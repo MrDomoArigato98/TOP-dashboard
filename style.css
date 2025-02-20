@@ -78,20 +78,34 @@ body{
     height: 90vh;
     grid-template-columns: 1fr 4fr;
 }
-.dashboard{
+.leftnav{
     display: grid;
-    grid-column: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
     color: white;
     font-weight: bolder;
     font-size: x-large;
     background-color: #4c93f1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-.dashboard ul{
+
+.leftnav svg{
+    height: 40px;
+    margin: 10px;
+}
+.nav-config{
+    margin-top: 2vh;
+}
+.dashboard, .nav-options, .nav-config{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    font-size:large
+}
+
+.container li{
     list-style: none;
 }
-.dashboard img{
-    width: 40px;
-}
+
 .content{
     display: grid;
     grid-template-rows: 1fr 4fr;
