@@ -1,3 +1,4 @@
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -68,6 +69,23 @@ h6 {
     isolation: isolate;
 }
 
+:root{
+    --left-nav-bg: #F72585;
+    --left-nav-text: rgb(18, 18, 18);
+    --left-nav-svg: ;
+
+    --quests-bg: white;
+    --card-bg:#7209B7;
+    --card-text: white;
+
+    --announcement-card-bg:#4361EE;
+    --announcement-card-text:white;
+
+    --button-bg:#3A0CA3;
+
+    --header-bg:#eaefee;
+}
+
 body {
     font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
@@ -82,16 +100,17 @@ body {
 .leftnav {
     display: grid;
     grid-template-rows: 1fr 2fr 1fr 2fr 2fr;
-    color: white;
+    color: black;
     font-weight: bolder;
     font-size: x-large;
-    background-color: #4c93f1;
+    background-color: var(--left-nav-bg);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .leftnav svg {
     height: 40px;
     margin: 10px;
+    filter: var(--left-nav-svg)
 }
 
 .nav-config {
@@ -112,16 +131,17 @@ body {
     font-size: large;
 }
 
-.leftnav a {
+.leftnav a, h2 {
     justify-self: start;
     text-decoration: none;
-    color: white;
+    color: var(--left-nav-text);
     font-size: larger;
 }
 
 .content {
     display: grid;
     grid-template-rows: 1fr 4fr;
+    
 }
 
 .searchbox svg{
@@ -137,6 +157,7 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     grid-template-rows: 7vh 10vh;
     grid-template-columns: 2fr 1fr;
+    background-color: var(--header-bg);
 }
 
 .searchbox {
@@ -175,7 +196,7 @@ input:focus {
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    background-color: #4c93f1;
+    background-color:var(--button-bg);
     color: white;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -192,15 +213,18 @@ input:focus {
     justify-self: center;
 }
 
-.cards {
+.quests {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: var(--quests-bg);
 }
 
 .card {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px;
+    color: var(--card-text);
+    background-color:var(--card-bg);
 }
 
 .socials {
@@ -226,6 +250,7 @@ input:focus {
 
 .announcements {
     display: grid;
+    
 }
 
 .announcements .title {
@@ -240,6 +265,8 @@ input:focus {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
+    background-color:var(--announcement-card-bg);
+    color: var(--announcement-card-text);
 }
 
 /*Trending box with people  */
@@ -254,6 +281,8 @@ input:focus {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--announcement-card-bg);
+    color: var(--announcement-card-text);
 }
 
 .people div {
@@ -271,3 +300,5 @@ input:focus {
 }
 
 /*Trending box with people END */
+
+
