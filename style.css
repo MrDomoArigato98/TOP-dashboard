@@ -90,8 +90,9 @@ h6 {
     --b-rank-card:#BAC1B8;
     --b-rank-card-text:black;
     
-    --special: #F72585
+    --special: #F72585;
     
+    --article-card-bg:#F72585;
 }
 
 .card.s-rank{
@@ -297,4 +298,50 @@ input:focus {
 
 .socials{
     display: grid;
+    gap: 30px;
+}
+
+
+/* Announcement card */
+.announcement{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.articles{
+    display: grid;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 20px;
+    align-content: space-around;
+    color: white;
+    background-color: var(--article-card-bg);
+}
+.articles div{
+    border-bottom: 1px solid whitesmoke;
+}
+.announcement .title{
+    display: grid;
+    align-self: center;
+}
+
+.tweets{
+    display: grid;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 20px;
+    align-content: space-around;
+    color: white;
+    background-color: var(--article-card-bg);
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.post{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+.post img{
+    height: 100%;
 }
