@@ -70,9 +70,9 @@ h6 {
 }
 
 :root{
-    --left-nav-bg: #7209B7;
+    --left-nav-bg: #000004;
     --left-nav-text: rgb(255, 255, 255);
-    --left-nav-svg: ;
+    --left-nav-svg: invert(100%) sepia(7%) saturate(7464%) hue-rotate(160deg) brightness(124%) contrast(104%);
 
     --quests-bg: white;
     --card-bg:#7209B7;
@@ -90,11 +90,15 @@ h6 {
     --b-rank-card:#BAC1B8;
     --b-rank-card-text:black;
     
+    --special: #F72585
     
 }
 
 .card.s-rank{
     background-color: var(--s-rank-card);
+}
+.card.s-rank.special{
+    background-color: var(--special);
 }
 .card.a-rank{
     background-color: var(--a-rank-card);
