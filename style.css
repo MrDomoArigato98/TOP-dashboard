@@ -78,7 +78,8 @@ h6 {
     --card-bg:#7209B7;
     --card-text: white;
     --card-svg: invert(19%) sepia(100%) saturate(2482%) hue-rotate(344deg) brightness(97%) contrast(101%);
-    --announcement-card-bg:#4361EE;
+    
+    --announcement-card-bg:#4A8FE7;
     --announcement-card-text:white;
 
     --button-bg:#4A8FE7;
