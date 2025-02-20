@@ -74,7 +74,6 @@ h6 {
     --left-nav-text: rgb(255, 255, 255);
     --left-nav-svg: invert(100%) sepia(7%) saturate(7464%) hue-rotate(160deg) brightness(124%) contrast(104%);
 
-    --quests-bg: white;
     --card-bg:#7209B7;
     --card-text: white;
     --card-svg: invert(19%) sepia(100%) saturate(2482%) hue-rotate(344deg) brightness(97%) contrast(101%);
@@ -127,7 +126,7 @@ body {
     font-weight: bolder;
     font-size: x-large;
     background-color: var(--left-nav-bg);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .leftnav svg {
@@ -154,7 +153,13 @@ body {
     font-size: large;
 }
 
-.leftnav a, h2 {
+.leftnav a{
+    justify-self: start;
+    text-decoration: none;
+    color: var(--left-nav-text);
+    font-size: larger;
+}
+.leftnav h2{
     justify-self: start;
     text-decoration: none;
     color: var(--left-nav-text);
@@ -244,17 +249,16 @@ input:focus {
     border: 1px solid black;
     border-radius: 1px;
 }
-
+#greeting div{
+    align-self: center;
+}
 .quests {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: var(--quests-bg);
 }
 
 .card svg{
     height: 40px;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1)) 
-    drop-shadow(0 0 20px rgba(0, 255, 255, 1));
 }
 
 .card {
@@ -275,7 +279,6 @@ input:focus {
 }
 .socials {
     display: grid;
-    margin-top: 15px;
     gap: 20px;
 }
 
@@ -295,39 +298,3 @@ input:focus {
     font-weight: bold;
     align-self: center;
 }
-
-/*Trending box with people  */
-.trending {
-    display: grid;
-    grid-template-rows: 1fr 6fr;
-}
-.trending .title{
-    align-self: center;
-}
-
-.people {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: var(--announcement-card-bg);
-    color: var(--announcement-card-text);
-}
-
-.people div {
-    display: grid;
-    padding: 10px;
-    grid-template-columns: 1fr 2fr;
-}
-
-.people p {
-    align-self: center;
-}
-
-.title {
-    font-weight: bold;
-}
-
-/*Trending box with people END */
-
-
