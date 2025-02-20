@@ -80,7 +80,7 @@ body{
 }
 .leftnav{
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 2fr;
     color: white;
     font-weight: bolder;
     font-size: x-large;
@@ -95,15 +95,21 @@ body{
 .nav-config{
     margin-top: 2vh;
 }
+.dashboard{
+    margin-top: 3vh;
+    align-self: start;
+}
 .dashboard, .nav-options, .nav-config{
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    font-size:large
+    font-size:large;
 }
-
-.container li{
-    list-style: none;
+.leftnav a{
+    justify-self: start;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
 }
 
 .content{
@@ -112,7 +118,7 @@ body{
 }
 .header{
     display: grid;
-    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     grid-template-rows: 7vh 10vh;
     grid-template-columns: 2fr 1fr;
 }
