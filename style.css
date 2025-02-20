@@ -277,10 +277,6 @@ input:focus {
     align-items: center;
     justify-content:space-around
 }
-.socials {
-    display: grid;
-    gap: 20px;
-}
 
 .projects {
     display: grid;
@@ -297,4 +293,8 @@ input:focus {
     font-size: x-large;
     font-weight: bold;
     align-self: center;
+}
+
+.socials{
+    display: grid;
 }
