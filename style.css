@@ -70,8 +70,8 @@ h6 {
 }
 
 :root{
-    --left-nav-bg: #F72585;
-    --left-nav-text: rgb(18, 18, 18);
+    --left-nav-bg: #7209B7;
+    --left-nav-text: rgb(255, 255, 255);
     --left-nav-svg: ;
 
     --quests-bg: white;
@@ -253,8 +253,8 @@ input:focus {
 }
 
 .card {
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding: 20px;
     color: var(--card-text);
     background-color:var(--card-bg);
@@ -279,7 +279,8 @@ input:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;
-    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .your-projects {
@@ -294,7 +295,6 @@ input:focus {
 .trending {
     display: grid;
     grid-template-rows: 1fr 6fr;
-    margin-bottom: 15px;
 }
 .trending .title{
     align-self: center;
