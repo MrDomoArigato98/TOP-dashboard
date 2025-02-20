@@ -219,14 +219,25 @@ input:focus {
     background-color: var(--quests-bg);
 }
 
+.card svg{
+    height: 40px;
+}
 .card {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px;
     color: var(--card-text);
     background-color:var(--card-bg);
-}
 
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 40px 2fr 1fr;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content:space-around
+}
 .socials {
     display: grid;
     gap: 20px;
